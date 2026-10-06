@@ -1,0 +1,107 @@
+[
+  {
+    "model": "TF-IDF + LogReg",
+    "macro_f1_argmax": 0.7195561263595547,
+    "macro_f1_tuned": 0.7289143099800276,
+    "delta": 0.009358183620472915,
+    "neutral_f1_argmax": 0.4421380384016606,
+    "neutral_f1_tuned": 0.446535500427716,
+    "weights": [
+      0.7078,
+      0.7078,
+      1.5845
+    ],
+    "val_macro_f1_tuned": 0.7324628443079283
+  },
+  {
+    "model": "LSTM",
+    "macro_f1_argmax": 0.7282497689309917,
+    "macro_f1_tuned": 0.7395718873653263,
+    "delta": 0.011322118434334616,
+    "neutral_f1_argmax": 0.4456958970233307,
+    "neutral_f1_tuned": 0.46509050609530844,
+    "weights": [
+      0.8175,
+      0.7286,
+      1.4538
+    ],
+    "val_macro_f1_tuned": 0.7369287165298711
+  },
+  {
+    "model": "Bi-GRU",
+    "macro_f1_argmax": 0.750563493826891,
+    "macro_f1_tuned": 0.751009243616695,
+    "delta": 0.00044574978980393976,
+    "neutral_f1_argmax": 0.48736462093862815,
+    "neutral_f1_tuned": 0.49156891495601174,
+    "weights": [
+      0.8488,
+      0.9523,
+      1.1989
+    ],
+    "val_macro_f1_tuned": 0.7506225145377102
+  },
+  {
+    "model": "Bi-LSTM + Attention",
+    "macro_f1_argmax": 0.7435073315559674,
+    "macro_f1_tuned": 0.7506971438770466,
+    "delta": 0.007189812321079181,
+    "neutral_f1_argmax": 0.47855004988360494,
+    "neutral_f1_tuned": 0.48498845265588914,
+    "weights": [
+      0.9355,
+      0.7431,
+      1.3214
+    ],
+    "val_macro_f1_tuned": 0.7544843315290434
+  },
+  {
+    "model": "DistilBERT (fine-tuned)",
+    "macro_f1_argmax": 0.7662314387965038,
+    "macro_f1_tuned": 0.7662314387965038,
+    "delta": 0.0,
+    "neutral_f1_argmax": 0.5025402201524132,
+    "neutral_f1_tuned": 0.5025402201524132,
+    "weights": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "val_macro_f1_tuned": 0.7755414080992059
+  },
+  {
+    "model": "Ensemble, mean (5)",
+    "macro_f1_argmax": 0.7643170587792129,
+    "macro_f1_tuned": 0.7692105789386637,
+    "delta": 0.0048935201594508815,
+    "neutral_f1_argmax": 0.5075573801082292,
+    "neutral_f1_tuned": 0.5206301575393848,
+    "weights": [
+      0.7805,
+      0.9826,
+      1.237
+    ],
+    "val_macro_f1_tuned": 0.7704584339036783
+  },
+  {
+    "model": "Ensemble, greedy (5)",
+    "macro_f1_argmax": 0.7756832031395403,
+    "macro_f1_tuned": 0.7759477010257964,
+    "delta": 0.0002644978862560432,
+    "neutral_f1_argmax": 0.5250557922499492,
+    "neutral_f1_tuned": 0.526924611088951,
+    "weights": [
+      0.9248,
+      1.0376,
+      1.0376
+    ],
+    "val_macro_f1_tuned": 0.7790392402650376,
+    "mixing_weights": {
+      "TF-IDF + LogReg": 0.2,
+      "LSTM": 0.05,
+      "Bi-GRU": 0.15,
+      "Bi-LSTM + Attention": 0.15,
+      "DistilBERT (fine-tuned)": 0.45
+    }
+  }
+]
